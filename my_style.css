@@ -1,0 +1,124 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 60% 40%;
+    grid-template-areas: 
+    "header"
+    "body"
+    "footer"    ;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+  }
+  
+header a {
+    color: white;
+  }
+  
+header {
+    font-family: 'Montserrat';
+    grid-area: header;
+    color: #fff;
+    text-shadow: 0 0 9px #000000;
+    margin: 30px;
+}
+
+.container{
+    margin-top: 10px;
+}
+ul.body-bg {
+    font-family: 'Montserrat';
+    color: white;
+    display:grid;
+    list-style-type:none;
+    margin:0;padding:0;
+    grid-template-columns: repeat(3, auto);
+    font-size: 20px;
+}
+
+ul.body-bg li {
+    padding: 2em;
+    background: #686868;
+}
+
+.body-bg h1{
+    font-size: 150px;
+}
+
+.layout {
+    grid-area: body;
+    display:grid;
+}
+
+footer {    
+    grid-area: footer;
+    background:#571212;
+}
+
+ul.tombol {
+    display:grid;
+    list-style-type:none;
+    margin:0;padding:0;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+ul.tombol li {
+    padding: 2em;
+}
+
+ul.tombol li span {
+    display:block;
+    font-size:1.4em;
+    margin-bottom:1em;
+    color:#b8b8b8;
+    background: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+img.right-img{
+    margin-top: 10px;
+    float: right;
+    width:20%;
+}
+
+.bg-file {
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background: url(img/prison-bg.png);
+  }  
+  
+@media only screen and (max-width: 500px) {
+
+    body {
+        grid-template-areas: 
+            "header"
+            "body";
+    }
+
+    ul.tombol, ul.body-bg, .layout {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    
+    .layout {
+        text-align:center;
+    }
+
+    img.right-img{
+        float: none;
+        width:50%;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+    
+    header h2 {
+        font-size: 20px;
+    }
+}
