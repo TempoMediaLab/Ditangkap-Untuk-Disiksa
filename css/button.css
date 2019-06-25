@@ -1,0 +1,68 @@
+.list-button a{
+    text-decoration: none
+}
+
+.list-desc:hover, .list-yusman:hover{
+    background: #3c3b3b;
+    color: #b8b8b8;
+}
+
+.list-title{
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.list-ket{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 50px;
+}
+
+.list-desc{
+    background: #474747 ;
+    text-align: left;
+    margin-top: 150px;
+    margin-right: 550px;
+    color: white
+  }
+
+.list-yusman{
+    background: #474747 ;
+    text-align: left;
+    margin-top: 170px;
+    margin-left: 530px;
+    color: white
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .list-desc{
+        margin-right: 400px;
+      }
+
+    .list-yusman{
+        margin-left: 380px;
+      }
+
+
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .list-title{
+        font-size: 30px;
+    }
+
+    .list-ket{
+        font-size: 11px;
+    }
+
+    .list-desc{
+        margin-right: 0;
+    }
+
+    .list-yusman{
+        margin-left: 0;
+    }
+  }
